@@ -13,7 +13,7 @@ angular.module('dashApi', [], function($provide) {
                     ret.instanceUrl = instanceUrl || '';
                 };
                 ret.getDashboardUrl = function () {
-                    return ret.instanceUrl + 'LEFT($Api.Partner_Server_URL_260, FIND( \'/services\', $Api.Partner_Server_URL_260))/services/data/v30.0/analytics/dashboards/' + ret.dashboardId;
+                    return ret.instanceUrl + 'LEFT($Api.Partner_Server_URL_260, FIND( \\'/services\\', $Api.Partner_Server_URL_260))/services/data/v30.0/analytics/dashboards/' + ret.dashboardId;
                 };
                 ret.poll = function () {
                     $http({
